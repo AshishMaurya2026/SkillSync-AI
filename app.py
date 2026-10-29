@@ -198,7 +198,7 @@ Return only 4 short bullets."""
         response = client.models.generate_content(model="gemini-3.8-flash", contents=prompt)
         result = (response.text or "").strip()
         return [line.strip(" •-\t") for line in result.splitlines() if line.strip()][:6] or None
-        except Exception as exc:
+    except Exception as exc:
     st.error(f"Gemini API error: {exc}")
     return None
 # Sidebar
