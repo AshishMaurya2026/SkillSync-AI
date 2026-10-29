@@ -1,0 +1,16 @@
+SKILLSYNC AI — QUICK START
+
+1. Extract this ZIP to a normal folder (not inside the ZIP preview).
+2. Open the extracted folder.
+3. Click the File Explorer address bar, type cmd, press Enter.
+4. Run: py -m pip install -r requirements.txt
+5. Run: py -m streamlit run app.py
+6. Open http://localhost:8501 if the browser does not open.
+
+Team:
+Ashish Maurya
+Aryan Sachan
+Aviral Singh
+Aryan Verma
+
+The core analysis works without a Gemini API key. Optional Gemini setup and GitHub/Streamlit deployment steps are in README.md.
