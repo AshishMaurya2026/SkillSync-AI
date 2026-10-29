@@ -195,13 +195,12 @@ RESUME EXCERPT (first 5000 chars):
 JOB DESCRIPTION (first 3000 chars):
 {job_description[:3000]}
 Return only 4 short bullets."""
-        response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
+        response = client.models.generate_content(model="gemini-3.8-flash", contents=prompt)
         result = (response.text or "").strip()
         return [line.strip(" •-\t") for line in result.splitlines() if line.strip()][:6] or None
-    except Exception as exc:
-        st.warning("Gemini suggestions could not be loaded; showing the built-in suggestions instead. Check the API key and connection if you enabled Gemini.")
-        return None
-
+        except Exception as exc:
+    st.error(f"Gemini API error: {exc}")
+    return None
 # Sidebar
 with st.sidebar:
     st.markdown("## 💼 SkillSync AI")
