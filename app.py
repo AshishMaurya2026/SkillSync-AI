@@ -15,7 +15,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-TEAM = ["Ashish Maurya", "Aryan Sachan", "Aviral Singh", "Aryan Verma"]
+TEAM = ["Ashish Maurya", "Aryan Sachan", "Aviral Singh"]
 
 # Strong contrast, dark navy/cyan interface. Native widget colors are explicitly set
 # to avoid the unreadable white-on-white / dark-on-dark issue.
