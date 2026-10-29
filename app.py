@@ -199,7 +199,7 @@ Return only 4 short bullets."""
         result = (response.text or "").strip()
         return [line.strip(" •-\t") for line in result.splitlines() if line.strip()][:6] or None
     except Exception as exc:
-    st.error(f"Gemini API error: {exc}")
+        st.error(f"Gemini API error: {exc}")
     return None
 # Sidebar
 with st.sidebar:
